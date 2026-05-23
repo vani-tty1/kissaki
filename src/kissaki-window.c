@@ -43,7 +43,7 @@ static void
 kissaki_window_init (KissakiWindow *self)
 {
 	gtk_widget_init_template (GTK_WIDGET (self));
-    kissaki_core_setup_editor (self->source_view);
+    kissaki_core_setup_editor (self->source_view, NULL);
     g_signal_connect (adw_style_manager_get_default (),
                   "notify::dark",
                   G_CALLBACK (on_dark_changed),
