@@ -10,6 +10,41 @@ template $KissakiWindow: Adw.ApplicationWindow {
   content: Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
+      [start]
+      MenuButton open_file {
+        label: _("Open");
+
+        popover: Popover {
+          Box {
+            orientation: vertical;
+            spacing: 6;
+            margin-end: 6;
+            margin-top: 6;
+            margin-start: 6;
+            margin-bottom: 6;
+
+            SearchEntry {
+              placeholder-text: _("Search recent files");
+            }
+
+            ScrolledWindow {
+              hscrollbar-policy: never;
+              min-content-height: 250;
+
+              ListBox recent_files_list {
+                selection-mode: single;
+              }
+
+            }
+
+            Button {
+              label: _("Other Documents");
+              action-name: "win.open-file";
+              margin-top: 6;
+            }
+          }
+        };
+      }
       [end]
       MenuButton {
         primary: true;
