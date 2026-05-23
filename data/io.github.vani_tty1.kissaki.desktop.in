@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Kissaki
+Exec=kissaki
+Icon=io.github.vani_tty1.kissaki
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

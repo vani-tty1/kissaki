@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/io.github.vani_tty1.kissaki.desktop.in
+data/io.github.vani_tty1.kissaki.metainfo.xml.in
+data/io.github.vani_tty1.kissaki.gschema.xml
+src/main.c
+src/kissaki-window.c
+src/kissaki-window.ui
